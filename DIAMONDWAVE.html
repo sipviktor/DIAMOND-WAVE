@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIAMOND WAVE</title>
+    <link rel="stylesheet" href="DIAMONDWAVE.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script href="app.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <script>
+            var i = 0;
+            $(document).ready(function() {
+                $("#menu-btn").click(function () {
+                    
+                    if(i == 0) {
+                        $("#menu-btn").addClass("active");
+                        $('.navbar').css('display', 'block');
+                        i = 1;
+                    }else{
+                        $("#menu-btn").removeClass("active");
+                        $('.navbar').css('display', 'none');
+                        i = 0;
+                    }
+                  
+                });
+            });
+        </script>
+        <img src="video/logo1.png" class="image1"><img src="video/logo2.png" class="image2">
+        <a href="#" class="logo">DIAMOND FLEET<br>DIAMOND WAVE</a>
+        
+        <nav class="navbar">
+            <a href="#home" class="kkt">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#destination">DESTINATIONS</a>
+            <a href="#services">SERVICES</a>
+            <a href="#gallery">GALLERY</a>
+            <a href="#contest">CONTEST</a>
+            <a href="#ships">SHIPS</a>
+            <a href="#"><img src="video/cz.png" class="flag"></a>
+            <a href="#"><img src="video/eng.jpg" class="flag" id="flag"></a>
+        </nav>
+
+        <a href="#book-form" class="btn1">BOOK NOW</a>
+    
+    </header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <span>FOLLOW US</span>
+            <h3>to the unknown</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos maxime vel enim similique voluptate est dolor, fugit voluptatem obcaecati quis laudantium at ipsam voluptatibus repellat facilis? Tempora ipsum ipsa quod.</p>
+            <a href="#" class="btn">BOOK NOW</a>
+        </div>
+    </section>
+    <section class="book-form" id="book-form">
+        <form action="">
+            <div class="inputBox">
+                <span>WHERE</span>
+                <input type="text" placeholder="place name" required value="">
+            </div>
+            <div class="inputBox">
+                <span>WHEN</span>
+                <input type="date" required value="">
+            </div>
+            <div class="inputBox">
+                <span>TRAVELLERS</span>
+                <input type="number" placeholder="number of people" required min="1" max="999" value="">
+            </div>
+            <input type="submit" value="find now" class="btn">
+        </form>
+    </section>
+
+    <section class="about" id="about">
+        <div class="video-container">
+            <video src="video/video1.mp4" muted autoplay loop class="video"></video>
+        </div>
+
+        <div class="content">
+            <span>why choose us?</span>
+            <h3>dolphins, sun and a good time</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non libero numquam provident saepe ipsa eius harum quo aperiam enim id odit perferendis accusamus, corrupti praesentium modi error asperiores! Nisi, adipisci?</p>
+            <a href="#" class="btn">read more</a>   
+        </div>
+    </section>
+
+    <section class="destination" id="destination">
+        
+        <div class="heading">
+            <span>our destinations</span>
+            <h1>choose your destination</h1>
+        </div>
+
+        <div class="box-container">
+            
+            <div class="box">
+                <div class="image">
+                    <img src="video/LOD3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>tours & travel</h3>
+                    <p>Lorem ipsum dolor, sit amet conectetur adipiscing.</p>
+                    <a href="#">read more<i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="video/LOD3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>tours & travel</h3>
+                    <p>Lorem ipsum dolor, sit amet conectetur adipiscing.</p>
+                    <a href="#">read more<i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="video/LOD3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>tours & travel</h3>
+                    <p>Lorem ipsum dolor, sit amet conectetur adipiscing.</p>
+                    <a href="#">read more<i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="video/LOD3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>tours & travel</h3>
+                    <p>Lorem ipsum dolor, sit amet conectetur adipiscing.</p>
+                    <a href="#">read more<i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="video/LOD3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>tours & travel</h3>
+                    <p>Lorem ipsum dolor, sit amet conectetur adipiscing.</p>
+                    <a href="#">read more<i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="video/LOD3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>tours & travel</h3>
+                    <p>Lorem ipsum dolor, sit amet conectetur adipiscing.</p>
+                    <a href="#">read more<i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="video/LOD3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>tours & travel</h3>
+                    <p>Lorem ipsum dolor, sit amet conectetur adipiscing.</p>
+                    <a href="#">read more<i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="video/LOD3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>tours & travel</h3>
+                    <p>Lorem ipsum dolor, sit amet conectetur adipiscing.</p>
+                    <a href="#">read more<i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        
+        <div class="heading">
+            <span>our services</span>
+            <h1>countless experiences</h1>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-fish"></i>
+                <h3>dolphins</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quibusdam iste et blanditiis illum dolorem corporis, tenetur maxime eaque voluptatum ratione ipsam voluptate rerum tempora rem similique nam magnam qui!</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-water"></i>
+                <h3>diving</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quibusdam iste et blanditiis illum dolorem corporis, tenetur maxime eaque voluptatum ratione ipsam voluptate rerum tempora rem similique nam magnam qui!</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-mountain"></i>
+                <h3>exploring</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quibusdam iste et blanditiis illum dolorem corporis, tenetur maxime eaque voluptatum ratione ipsam voluptate rerum tempora rem similique nam magnam qui!</p>
+            </div>
+
+        </div>
+
+        
+        
+    </section>
+
+    <section class="gallery" id="gallery">
+
+        <div class="heading">
+            <span>gallery</span>
+            <h1>our photos</h1>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="video/IMG_3262.JPG" alt="">
+                <span>travel spot</span>
+                <h3>egypt</h3>
+            </div>
+
+            <div class="box">
+                <img src="video/IMG_3262.JPG" alt="">
+                <span>travel spot</span>
+                <h3>hurgada</h3>
+            </div>
+
+            <div class="box">
+                <img src="video/IMG_3262.JPG" alt="">
+                <span>travel spot</span>
+                <h3>egypt</h3>
+            </div>
+
+            <div class="box">
+                <img src="video/IMG_3262.JPG" alt="">
+                <span>travel spot</span>
+                <h3>hurgada</h3>
+            </div>
+
+            <div class="box">
+                <img src="video/IMG_3262.JPG" alt="">
+                <span>travel spot</span>
+                <h3>egypt</h3>
+            </div>
+
+            <div class="box">
+                <img src="video/IMG_3262.JPG" alt="">
+                <span>travel spot</span>
+                <h3>hurgada</h3>
+            </div>
+
+            <div class="box">
+                <img src="video/IMG_3262.JPG" alt="">
+                <span>travel spot</span>
+                <h3>egypt</h3>
+            </div>
+
+            <div class="box">
+                <img src="video/IMG_3262.JPG" alt="">
+                <span>travel spot</span>
+                <h3>hurgada</h3>
+            </div>
+
+            <div class="box">
+                <img src="video/IMG_3262.JPG" alt="">
+                <span>travel spot</span>
+                <h3>egypt</h3>
+            </div>
+
+            <div class="box">
+                <img src="video/IMG_3262.JPG" alt="">
+                <span>travel spot</span>
+                <h3>hurgada</h3>
+            </div>
+
+            <div class="box">
+                <img src="video/IMG_3262.JPG" alt="">
+                <span>travel spot</span>
+                <h3>egypt</h3>
+            </div>
+
+            <div class="box">
+                <img src="video/IMG_3262.JPG" alt="">
+                <span>travel spot</span>
+                <h3>hurgada</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="contest" id="contest">
+
+        <div class="heading">
+                <span>contest</span>
+                <h1>details to the contest</h1>
+            </div>
+
+        <div class="contest-box">
+
+            <div class="contest-logo">
+                <img src="video/logo2.png">
+            </div>
+
+            <div class="content">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia odio vel, doloremque placeat, quasi voluptate atque voluptates a culpa, ipsum ullam eum architecto eaque magnam corporis dolorem iusto. Commodi, nisi.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta est, ab dicta id expedita ad dolores in! Doloremque beatae voluptates placeat. Nulla ratione explicabo repellat accusantium quam, culpa doloribus molestias?</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta est, ab dicta id expedita ad dolores in! Doloremque beatae voluptates placeat. Nulla ratione explicabo repellat accusantium quam, culpa doloribus molestias?</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta est, ab dicta id expedita ad dolores in! Doloremque beatae voluptates placeat. Nulla ratione explicabo repellat accusantium quam, culpa doloribus molestias?</p>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="heading">
+        <span>ships</span>
+        <h1>individual ships</h1>
+    </div>
+
+    <section class="ships" id="ships">
+
+
+        <div class="image-container">
+            <img src="video/LOD1.jpg">
+        </div>
+
+        <div class="content">
+            <h3>SHIP1</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non libero numquam provident saepe ipsa eius harum quo aperiam enim id odit perferendis accusamus, corrupti praesentium modi error asperiores! Nisi, adipisci?</p>
+        </div>
+
+        <div class="image-container">
+            <img src="video/LOD1.jpg">
+        </div>
+
+        <div class="content">
+            <h3>SHIP2</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non libero numquam provident saepe ipsa eius harum quo aperiam enim id odit perferendis accusamus, corrupti praesentium modi error asperiores! Nisi, adipisci?</p>
+        </div>
+
+        <div class="image-container">
+            <img src="video/soon.png">
+        </div>
+
+        <div class="content">
+            <h3>SHIP3</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non libero numquam provident saepe ipsa eius harum quo aperiam enim id odit perferendis accusamus, corrupti praesentium modi error asperiores! Nisi, adipisci?</p>
+        </div>
+
+    </section>
+
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>share us</h3>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="#about" class="links"> <i class="fas fa-arrow-right"></i> about </a>
+                <a href="#destination" class="links"> <i class="fas fa-arrow-right"></i> destinations </a>
+                <a href="#services" class="links"> <i class="fas fa-arrow-right"></i> services </a>
+                <a href="#gallery" class="links"> <i class="fas fa-arrow-right"></i> gallery </a>
+                <a href="#contest" class="links"> <i class="fas fa-arrow-right"></i> contest </a>
+                <a href="#ships" class="links"> <i class="fas fa-arrow-right"></i> ships </a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <p><i class="fas fa-map">Česká Lípa, Czech Republic</i></p>
+                <p><i class="fas fa-phone">+420 123-456-789</i></p>
+                <p><i class="fas fa-envelope">shmeepis@gmail.com</i></p>
+                <p><i class="fas fa-clock">7:00am - 10:00pm</i></p>
+            </div>
+
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <form action="">
+                    <input type="email" name="" placeholder="enter your email" class="email" id="">
+                    <input type="submit" value="subscribe" class="btn1">
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="credit">created by Viktor Sip, inspired by mr.web designer</div>
+</body>
+</html>
